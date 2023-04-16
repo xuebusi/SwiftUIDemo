@@ -11,7 +11,13 @@ import SwiftUI
 struct SwiftUIDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            TaskListView(viewModel: TaskListViewModel())
+//            ApiManagerView()
+//            MVVMTodoListDemo(vm: MVVMTodoListViewModel())
+//            EditModelViewDemo()
+//            EditModeViewDemo2()
+//            ListOnDeleteExampleView2()
+            FileFolderListView()
         }
     }
 }
