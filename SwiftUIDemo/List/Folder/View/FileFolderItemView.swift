@@ -18,9 +18,7 @@ struct FileFolderItemView: View {
             Image(systemName: "folder.fill")
                 .foregroundColor(.cyan)
             NavigationLink {
-                Text(folder.text)
-                    .navigationTitle(folder.text)
-                    .navigationBarTitleDisplayMode(.inline)
+                FileFolderListView(parentFolder: FileFolder(parentId: folder.id.uuidString, text: folder.text))
             } label: {
                 swipeActionView()
             }
@@ -90,7 +88,7 @@ extension FileFolderItemView {
 struct FileFolderItemView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            FileFolderItemView(vm: FileFolderViewModel(), folder: FileFolder(text: "A"))
+            FileFolderItemView(vm: FileFolderViewModel(), folder: FileFolder(parentId: "0", text: "A"))
         }
     }
 }

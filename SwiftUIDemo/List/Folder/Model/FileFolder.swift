@@ -9,5 +9,6 @@ import Foundation
 
 struct FileFolder: Identifiable, Equatable, Codable {
     var id = UUID()
+    var parentId: String
     var text: String
 }

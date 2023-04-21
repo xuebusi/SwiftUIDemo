@@ -28,7 +28,7 @@ struct ShowLicenseAgreement: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(.orange)
-//            .presentationDetents([.medium]) // 中等高度
+            // .presentationDetents([.medium]) // 中等高度
             // .presentationDetents([.large])
              .presentationDetents([.height(350)]) // 自定义高度
         }

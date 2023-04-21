@@ -67,9 +67,13 @@
 		2B7CABD329D5E0DE00B9BA85 /* ErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7CABD229D5E0DE00B9BA85 /* ErrorMessageView.swift */; };
 		2B82158A29B962D10054694B /* ImageBeautifyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82158929B962D10054694B /* ImageBeautifyDemo.swift */; };
 		2B82158C29B96B650054694B /* ImageAdjustDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82158B29B96B650054694B /* ImageAdjustDemo.swift */; };
+		2B87F02A29ECE9E000C87044 /* FileFolderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87F02929ECE9E000C87044 /* FileFolderHomeView.swift */; };
+		2B87F02C29ECF37400C87044 /* FileFolderDatabaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87F02B29ECF37400C87044 /* FileFolderDatabaseView.swift */; };
 		2B8AF4D229E7E0CD0046941A /* TextFieldExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AF4D129E7E0CD0046941A /* TextFieldExampleView.swift */; };
 		2B8AF4D429E7E63D0046941A /* DropdownTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AF4D329E7E63D0046941A /* DropdownTextFieldView.swift */; };
 		2B8AF4D629E8250A0046941A /* ForEachDeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AF4D529E8250A0046941A /* ForEachDeleteView.swift */; };
+		2B8E14B729EFF02F00713736 /* AESManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E14B629EFF02F00713736 /* AESManager.swift */; };
+		2B8E14BA29EFF0D900713736 /* AESView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E14B929EFF0D900713736 /* AESView.swift */; };
 		2B90B8DC29BF5E920058CF5E /* BlockGameDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90B8DB29BF5E920058CF5E /* BlockGameDemoView.swift */; };
 		2B995A6829B0DB0000EAA0FC /* NavigationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B995A6729B0DB0000EAA0FC /* NavigationDemoView.swift */; };
 		2B9B5C1629C48C5C002CE923 /* 沉默是金.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B9B5C1529C48C5C002CE923 /* 沉默是金.txt */; };
@@ -189,14 +193,19 @@
 		2B65B88029B8D5ED00B8CB77 /* ClockDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockDemoView.swift; sourceTree = "<group>"; };
 		2B65B88429B8D89700B8CB77 /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		2B68262E29DD1557009DE05D /* UserNotificationSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationSimpleView.swift; sourceTree = "<group>"; };
+		2B68942E29F155E2006E3181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2B73C27A29E3B61600B2674E /* TreeNodeTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNodeTView.swift; sourceTree = "<group>"; };
 		2B78F09B29B4480700DF4449 /* JsonPathDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPathDemoView.swift; sourceTree = "<group>"; };
 		2B7CABD229D5E0DE00B9BA85 /* ErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageView.swift; sourceTree = "<group>"; };
 		2B82158929B962D10054694B /* ImageBeautifyDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBeautifyDemo.swift; sourceTree = "<group>"; };
 		2B82158B29B96B650054694B /* ImageAdjustDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAdjustDemo.swift; sourceTree = "<group>"; };
+		2B87F02929ECE9E000C87044 /* FileFolderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileFolderHomeView.swift; sourceTree = "<group>"; };
+		2B87F02B29ECF37400C87044 /* FileFolderDatabaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileFolderDatabaseView.swift; sourceTree = "<group>"; };
 		2B8AF4D129E7E0CD0046941A /* TextFieldExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExampleView.swift; sourceTree = "<group>"; };
 		2B8AF4D329E7E63D0046941A /* DropdownTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownTextFieldView.swift; sourceTree = "<group>"; };
 		2B8AF4D529E8250A0046941A /* ForEachDeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachDeleteView.swift; sourceTree = "<group>"; };
+		2B8E14B629EFF02F00713736 /* AESManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESManager.swift; sourceTree = "<group>"; };
+		2B8E14B929EFF0D900713736 /* AESView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESView.swift; sourceTree = "<group>"; };
 		2B90B8DB29BF5E920058CF5E /* BlockGameDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockGameDemoView.swift; sourceTree = "<group>"; };
 		2B995A6729B0DB0000EAA0FC /* NavigationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemoView.swift; sourceTree = "<group>"; };
 		2B9B5C1529C48C5C002CE923 /* 沉默是金.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "沉默是金.txt"; sourceTree = "<group>"; };
@@ -536,6 +545,8 @@
 		2B5CF5C2297B85FA0043D440 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2B68942E29F155E2006E3181 /* Info.plist */,
+				2B8E14B529EFEFF600713736 /* Security */,
 				2BBE11F829E994EB00BED755 /* Model */,
 				2BBE11F129E98CB900BED755 /* UserDefaults */,
 				2BE876DB29E869CD008154CA /* WebSocket */,
@@ -632,6 +643,23 @@
 				2BEACAB729DB1B96007D213F /* ScrollViewLongTextView.swift */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		2B8E14B529EFEFF600713736 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				2B8E14B829EFF0CA00713736 /* View */,
+				2B8E14B629EFF02F00713736 /* AESManager.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		2B8E14B829EFF0CA00713736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B8E14B929EFF0D900713736 /* AESView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2B90B8DA29BF5E720058CF5E /* GamesDemo */ = {
@@ -838,10 +866,9 @@
 		2BF6368C29EBA21C007A1FB2 /* Folder */ = {
 			isa = PBXGroup;
 			children = (
-				2BF6368F29EBA27E007A1FB2 /* ViewModel */,
 				2BF6368E29EBA277007A1FB2 /* View */,
+				2BF6368F29EBA27E007A1FB2 /* ViewModel */,
 				2BF6368D29EBA26D007A1FB2 /* Model */,
-				2B64248729EADF62008CB291 /* FileFolderListView.swift */,
 			);
 			path = Folder;
 			sourceTree = "<group>";
@@ -857,8 +884,11 @@
 		2BF6368E29EBA277007A1FB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2B87F02929ECE9E000C87044 /* FileFolderHomeView.swift */,
+				2B64248729EADF62008CB291 /* FileFolderListView.swift */,
 				2BF6369429EBC30E007A1FB2 /* AddFolderButtonView.swift */,
 				2BF6369629EBC36C007A1FB2 /* FileFolderItemView.swift */,
+				2B87F02B29ECF37400C87044 /* FileFolderDatabaseView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -973,6 +1003,7 @@
 			files = (
 				2BF6369529EBC30E007A1FB2 /* AddFolderButtonView.swift in Sources */,
 				2B5A293229E1AB0000EABE4D /* RecurrenceFolderView.swift in Sources */,
+				2B8E14B729EFF02F00713736 /* AESManager.swift in Sources */,
 				2B4E54A429B0B9B300A7E594 /* AVAudioDemoView.swift in Sources */,
 				2BBE11FE29E995C200BED755 /* ApiDictViewModel.swift in Sources */,
 				2BD76B1529DC2AA10038313E /* ExpandingListView.swift in Sources */,
@@ -988,12 +1019,14 @@
 				2B64248229EA7E80008CB291 /* EditModelViewDemo.swift in Sources */,
 				2B5A293929E1BC5B00EABE4D /* FileDrectoryView2.swift in Sources */,
 				2B1CBC4729CEC8310051287A /* FormSimpleView.swift in Sources */,
+				2B8E14BA29EFF0D900713736 /* AESView.swift in Sources */,
 				2B5C284129E5950F008D167A /* ConfirmDialogDemoView.swift in Sources */,
 				2B48DE0229DDC74900AD65F7 /* OutlineGroupDeleteView.swift in Sources */,
 				2B9D69B229BD7B2900769899 /* GeometryReaderView2.swift in Sources */,
 				2B8AF4D429E7E63D0046941A /* DropdownTextFieldView.swift in Sources */,
 				2B5CF5C6297B85FA0043D440 /* ContentView.swift in Sources */,
 				2BAEA92229AEE48B007A0B68 /* AlignmentDemoView.swift in Sources */,
+				2B87F02C29ECF37400C87044 /* FileFolderDatabaseView.swift in Sources */,
 				2B90B8DC29BF5E920058CF5E /* BlockGameDemoView.swift in Sources */,
 				2BD172AD29EA2FCA00C9DCF1 /* MVVMTodoListDemo.swift in Sources */,
 				2BFB376329AB621500768024 /* ApiManager.swift in Sources */,
@@ -1051,6 +1084,7 @@
 				2B82158A29B962D10054694B /* ImageBeautifyDemo.swift in Sources */,
 				2B0DEED529D46D7C00A66D81 /* SourceKittenFrameworkView.swift in Sources */,
 				2BF2540329B6EA8200299F43 /* SampleCharts.swift in Sources */,
+				2B87F02A29ECE9E000C87044 /* FileFolderHomeView.swift in Sources */,
 				2BD76B2129DC314B0038313E /* NotepadExampleView.swift in Sources */,
 				2B5A293729E1AE6F00EABE4D /* FileDirectoryViewDemo.swift in Sources */,
 				2BD068E629E267A5004B60FD /* FileDirectoryExample2.swift in Sources */,
@@ -1213,6 +1247,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -1251,6 +1287,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

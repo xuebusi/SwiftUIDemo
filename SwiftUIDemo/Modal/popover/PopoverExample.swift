@@ -33,6 +33,10 @@ struct PopoverExample: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
             }
+            .ignoresSafeArea()
+            //.presentationDetents([.large]) // 最大高度
+            //.presentationDetents([.medium]) // 中等高度
+            .presentationDetents([.height(350)]) // 自定义高度
         }
     }
 }
