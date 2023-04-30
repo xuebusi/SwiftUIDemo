@@ -18,18 +18,24 @@ class FileFolderViewModel: ObservableObject {
     ]
     @Published var allFolders: [FileFolder] = []
     private let KEY: String = "Folders"
-    private var parentFolder: FileFolder = FileFolder(parentId: "0", text: "")
+    private var parentFolder: FileFolder = FileFolder(id: "0", parentId: "-1", text: "")
     @Published var selectedFolder: FileFolder?
     @Published var updateFolderName: String = ""
     @Published var createdFolderName: String = ""
     
     func getKey() -> String {
-        return "\(KEY):\(parentFolder.parentId)"
+        return "\(KEY):\(parentFolder.id)"
     }
     
     func loadFolders(parentFolder: FileFolder) {
         self.parentFolder = parentFolder
-        folders = UserDefManager.getObjectArray(key: "\(KEY):\(self.parentFolder.parentId)")
+        folders = UserDefManager.getObjectArray(key: "\(KEY):\(self.parentFolder.id)")
+        
+        print("\n")
+        for folder in folders {
+            print(" 目录名称：\(folder.text)，id：\(folder.id)，父ID：\(folder.parentId)")
+        }
+        print("\n")
     }
     
     func getAllFolders() -> [FileFolder] {
@@ -43,7 +49,7 @@ class FileFolderViewModel: ObservableObject {
         folders = UserDefManager.getObjectArray(key: "\(KEY):\(parentId)")
         for folder in folders where folder.parentId == parentId {
             result.append(folder)
-            result += getAllFileFolders(folders, parentId: folder.id.uuidString)
+            result += getAllFileFolders(folders, parentId: folder.id)
         }
         
         return result
@@ -53,7 +59,7 @@ class FileFolderViewModel: ObservableObject {
         if createdFolderName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             return
         }
-        folders.append(FileFolder(parentId: self.parentFolder.parentId, text: createdFolderName))
+        folders.append(FileFolder(parentId: self.parentFolder.id, text: createdFolderName))
         UserDefManager.setObjectArray(key: getKey(), objectArray: folders)
         createdFolderName = ""
     }
@@ -68,7 +74,7 @@ class FileFolderViewModel: ObservableObject {
                 return
             }
             folders.remove(at: index)
-            folders.insert(FileFolder(parentId: self.parentFolder.parentId, text: updateFolderName), at: index)
+            folders.insert(FileFolder(id: selectedFolder.id, parentId: selectedFolder.parentId, text: updateFolderName), at: index)
             UserDefManager.setObjectArray(key: getKey(), objectArray: folders)
             loadFolders(parentFolder: self.parentFolder)
             print("修改成功")

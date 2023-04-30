@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FileFolderListView: View {
     @StateObject var vm = FileFolderViewModel()
-    private var parentFolder: FileFolder
+    @State var parentFolder: FileFolder
     
     init(parentFolder: FileFolder) {
         self.parentFolder = parentFolder

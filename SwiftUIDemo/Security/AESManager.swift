@@ -9,31 +9,32 @@ import Foundation
 import CryptoKit
 
 class AESManager {
-    public static let AES_KEY = generateAESKey()
+    // AES密钥
+    var key: String = ""
     
-    private init() {
-        
+    init() {
+        // 初始化对称密钥
+        self.key = generateKey()
     }
     
-    // 生成密钥函数
-    private static func generateAESKey() -> String {
+    // 随机生成对称密钥
+    func generateKey() -> String {
         let key = SymmetricKey(size: .bits256)
         let base64EncodedKey = key.withUnsafeBytes {
             Data($0).base64EncodedString()
         }
-        print("Base64 encoded key: \(base64EncodedKey)")
+        print("生成随机密钥: \(base64EncodedKey)")
         return base64EncodedKey
     }
     
-    // 加密字符串函数
-    static func encryptString(string: String?) -> String? {
+    // 加密：输入明文，返回密文
+    func encrypt(string: String?) -> String? {
         guard let data = string?.data(using: .utf8) else {
             return nil
         }
-        guard let keyBytes = Data(base64Encoded: AES_KEY) else {
+        guard let keyBytes = Data(base64Encoded: key) else {
             return nil
         }
-        print(">>> AES_KEY:\(AES_KEY)")
         let key = SymmetricKey(data: keyBytes)
         guard let sealedBox = try? AES.GCM.seal(data, using: key) else {
             return nil
@@ -44,18 +45,17 @@ class AESManager {
         return encryptedData.base64EncodedString()
     }
     
-    // 解密字符串函数
-    static func decryptString(encryptedString: String?) -> String? {
+    // 解密：输入密文，返回明文
+    func decrypt(encryptedString: String?) -> String? {
         guard let encryptedData = Data(base64Encoded: encryptedString ?? "") else {
             return nil
         }
         guard let sealedBox = try? AES.GCM.SealedBox(combined: encryptedData) else {
             return nil
         }
-        guard let keyBytes = Data(base64Encoded: AES_KEY) else {
+        guard let keyBytes = Data(base64Encoded: key) else {
             return nil
         }
-        print(">>> AES_KEY:\(AES_KEY)")
         let key = SymmetricKey(data: keyBytes)
         guard let decryptedData = try? AES.GCM.open(sealedBox, using: key) else {
             return nil

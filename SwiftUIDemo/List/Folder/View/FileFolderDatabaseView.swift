@@ -18,7 +18,7 @@ struct FileFolderDatabaseView: View {
                 VStack(alignment: .leading) {
                     Text(folder.parentId)
                         .foregroundColor(.red)
-                    Text(folder.id.uuidString)
+                    Text(folder.id)
                         .foregroundColor(.cyan)
                     Text(folder.text)
                         .foregroundColor(.gray)

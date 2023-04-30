@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct FileFolderHomeView: View {
+    private let rootFolder: FileFolder = FileFolder(id: "0", parentId: "-1", text: "")
+    
     var body: some View {
         NavigationView {
             List {
                 Section {
                     NavigationLink {
-                        FileFolderListView(parentFolder: FileFolder(parentId: "0", text: ""))
+                        FileFolderListView(parentFolder: rootFolder)
                     } label: {
                         Text("目录列表")
                     }

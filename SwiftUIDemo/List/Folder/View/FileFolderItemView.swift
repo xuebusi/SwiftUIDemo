@@ -18,7 +18,7 @@ struct FileFolderItemView: View {
             Image(systemName: "folder.fill")
                 .foregroundColor(.cyan)
             NavigationLink {
-                FileFolderListView(parentFolder: FileFolder(parentId: folder.id.uuidString, text: folder.text))
+                FileFolderListView(parentFolder: folder)
             } label: {
                 swipeActionView()
             }
